@@ -22,16 +22,23 @@ $(document).ready(function(){
     //메인 타이틀
     $(".section01_title li").addClass("section01_active");
     
+    
+    
+    
+        var full_kw = 1000;
+        var full_deg = -45;
+        var now_kw = 1000; // 현재 전력 입력
+        var now_deg = full_deg - (((full_kw - now_kw) / 100)*18);
     $(window).scroll(function(){
         //그래프 돌리기
         var top = $(this).scrollTop();
         var view_point = $(".section03_title").offset().top;
 //        console.log(top,view_point);
         
-        var full_kw = 1000;
-        var full_deg = -45;
-        var now_kw = 1000; // 현재 전력 입력
-        var now_deg = full_deg - (((full_kw - now_kw) / 100)*18);
+//        var full_kw = 1000;
+//        var full_deg = -45;
+//        var now_kw = 1000; // 현재 전력 입력
+//        var now_deg = full_deg - (((full_kw - now_kw) / 100)*18);
         
         console.log(now_deg);
         if(top>=view_point) {
@@ -64,7 +71,18 @@ $(document).ready(function(){
     
     
     
-    
+    //그래프 인풋 입력값
+    $("#graph").keyup(function(){
+        var input_kw = Number($("#graph").val());
+        console.log(typeof input_kw);
+        if(input_kw >= 0 && input_kw <= 1000) {
+            now_kw = input_kw;
+            var now_deg = full_deg - (((full_kw - now_kw) / 100)*18);
+            
+            $(".graph_circle").css({"transform":"rotate("+now_deg+"deg)"});
+            return false;
+        }
+    });
     
     
 });/*레디 펑션!*/
