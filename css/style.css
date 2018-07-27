@@ -585,7 +585,6 @@ header {
     color: white;
     padding: 116px 28px 28px 28px;
     position: relative;
-    font-family: BMYEONSUNG;
 }
 
 .webzin img {
@@ -622,6 +621,7 @@ header {
 
 .webzin_title {
     font-size: 32px;
+    font-family: BMYEONSUNG;
 }
 
 .webzin a {
@@ -831,7 +831,7 @@ header {
     width: 100px;
     position:absolute;
     bottom: 0;
-    left: 120px;
+    left: 125px;
     padding-left: 5px;
 }
 
