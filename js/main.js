@@ -23,8 +23,6 @@ $(document).ready(function(){
     $(".section01_title li").addClass("section01_active");
     
     
-    
-    
         var full_kw = 1000;
         var full_deg = -45;
         var now_kw = 1000; // 현재 전력 입력
@@ -89,7 +87,35 @@ $(document).ready(function(){
     });
     
     
+    //
     
+ /*   $('.section03_more').hover(function(){
+      var $elem = $(this);
+      var angle = 90;
+        
+      $({deg: 0}).animate({deg: angle}, {
+          duration: 10,
+          step: function(now) {
+              $elem.css({
+                  transform: 'rotate(' + now + 'deg)'
+              });
+          }
+      });
+  },function(){
+        var $elem = $(this);
+      var angle = 0;
+        
+      $({deg: 0}).animate({deg: angle}, {
+          duration: 10,
+          step: function(now) {
+              $elem.css({
+                  transform: 'rotate(' + now + 'deg)'
+              });
+          }
+      });
+    });*/
+
+   
     
     
 });/*레디 펑션!*/
