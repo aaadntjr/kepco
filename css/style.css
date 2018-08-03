@@ -50,13 +50,16 @@ img {
 
 body {
     width: 100%;
+    min-width: 1280px;
     font-family: 'Spoqa Han Sans';
     font-weight: 500;
 }
 
 /*header*/
+
 header {
     width: 100%;
+    min-width: 1280px;
     height: 100px;
     background: #fff;
     -webkit-box-shadow: 0px 2px 2px #999;
@@ -164,9 +167,10 @@ header {
     -o-transition: .3s;
     transition: .3s;
 }
+
 .login_menu li input:focus {
     -webkit-box-shadow: 0px 0px 8px #eaf3ff;
-            box-shadow: 0px 0px 8px #eaf3ff;
+    box-shadow: 0px 0px 8px #eaf3ff;
 }
 
 .login_search {
@@ -180,6 +184,7 @@ header {
 
 .sub_menu {
     width: 100%;
+    min-width: 1280px;
     background: rgba(230, 0, 18, 0.4);
     color: white;
     font-size: 16px;
@@ -241,14 +246,16 @@ header {
 .sub_menu_list li:first-child {
     margin-top: 0px;
 }
+
 .linked_gnb::before {
-    content:'\2713';
+    content: '\2713';
     position: absolute;
     top: 0;
     left: -20px;
 }
+
 .linked::before {
-    content:'\2713';
+    content: '\2713';
     position: absolute;
     top: 0;
     left: -10px;
@@ -261,6 +268,7 @@ header {
 
 .section01 {
     width: 100%;
+    min-width: 1280px;
     height: 785px;
     background: url(../img/main_bg.jpg) no-repeat center center /cover;
     position: relative;
@@ -283,6 +291,7 @@ header {
 
 .section01_bg {
     width: 100%;
+    min-width: 1280px;
     height: 100%;
     position: absolute;
     top: 0;
@@ -348,6 +357,7 @@ header {
 
 .section02 {
     width: 100%;
+    min-width: 1280px;
     background: #f2f2f2;
     padding: 70px 0px;
     text-align: center;
@@ -456,18 +466,37 @@ header {
     -o-transition: .5s;
     transition: .5s;
 }
+
 @-webkit-keyframes more_btn {
-    0% {max-height: 0%}
-    30% {max-height: 100%}
-    50% {max-height: 50%}
-    100% {max-height: 100%}
+    0% {
+        max-height: 0%
+    }
+    30% {
+        max-height: 100%
+    }
+    50% {
+        max-height: 50%
+    }
+    100% {
+        max-height: 100%
+    }
 }
+
 @keyframes more_btn {
-    0% {max-height: 0%}
-    30% {max-height: 100%}
-    50% {max-height: 50%}
-    100% {max-height: 100%}
+    0% {
+        max-height: 0%
+    }
+    30% {
+        max-height: 100%
+    }
+    50% {
+        max-height: 50%
+    }
+    100% {
+        max-height: 100%
+    }
 }
+
 .section02_more::after {
     content: '';
     position: absolute;
@@ -487,13 +516,14 @@ header {
 .section02_more:hover::after {
     max-height: 100%;
     -webkit-animation: more_btn .5s 1 alternate ease-in-out;
-            animation: more_btn .5s 1 alternate ease-in-out;
+    animation: more_btn .5s 1 alternate ease-in-out;
 }
 
 /*section03*/
 
 .section03 {
     width: 100%;
+    min-width: 1280px;
     background: #fff;
     padding: 70px 0px;
 }
@@ -670,6 +700,7 @@ header {
 
 .section04 {
     width: 100%;
+    min-width: 1280px;
     padding: 40px 0px;
     background: url(../img/service_bg.png) no-repeat bottom left;
     background-color: #014099;
@@ -749,6 +780,7 @@ header {
 
 .section05 {
     width: 100%;
+    min-width: 1280px;
     padding: 70px 0px;
 }
 
@@ -843,9 +875,10 @@ header {
     -ms-transform: rotate(45deg);
     transform: rotate(45deg);
 }
+
 #graph {
     width: 100px;
-    position:absolute;
+    position: absolute;
     bottom: 0;
     left: 125px;
     padding-left: 5px;
@@ -976,8 +1009,10 @@ header {
 }
 
 /*sectino06*/
+
 .section06 {
     width: 100%;
+    min-width: 1280px;
     background: #222;
     color: white;
     letter-spacing: -0.025em;
@@ -989,13 +1024,16 @@ header {
     background: url(../img/crowd.png) no-repeat top right 40px / contain;
     padding: 70px 40px 40px 40px;
 }
+
 .section06_subtitle {
     font-size: 24px;
     margin-bottom: 16px;
 }
+
 .section06_subtitle span {
     color: #69bfad;
 }
+
 .section06_title {
     display: inline-block;
     font-size: 36px;
@@ -1004,6 +1042,7 @@ header {
     margin-bottom: 40px;
     position: relative;
 }
+
 .section06_title::after {
     content: '';
     width: 100%;
@@ -1018,9 +1057,11 @@ header {
     -o-transition: .5s;
     transition: .5s;
 }
+
 .section06_title span {
     color: #69bfad;
 }
+
 .section06_btn {
     display: block;
     width: 90px;
@@ -1043,6 +1084,7 @@ header {
     bottom: 0;
     left: 0;
     width: 100%;
+
     height: 100%;
     background: #69bfad;
     max-height: 0%;
@@ -1052,8 +1094,9 @@ header {
 .section06_btn:hover::after {
     max-height: 100%;
     -webkit-animation: more_btn .5s 1 alternate ease-in-out;
-            animation: more_btn .5s 1 alternate ease-in-out;
+    animation: more_btn .5s 1 alternate ease-in-out;
 }
+
 .section06:hover .section06_title::after {
     max-width: 100%;
 }
@@ -1066,6 +1109,7 @@ header {
 
 .section07 {
     width: 100%;
+    min-width: 1280px;
     background: #eef6ff;
 }
 
@@ -1074,19 +1118,23 @@ header {
     margin: 0 auto;
     padding: 70px 0px;
 }
+
 .section07_container::after {
     content: '';
     display: block;
     clear: both;
 }
+
 .section07_item {
     float: left;
     width: 320px;
     margin-right: 100px;
 }
+
 .section07_item:last-child {
     margin-right: 0px;
 }
+
 .section07_top {
     padding: 70px 0px 70px 40px;
     color: white;
@@ -1099,6 +1147,7 @@ header {
     -o-transition: .5s;
     transition: .5s;
 }
+
 .section07_top::after {
     content: '';
     position: absolute;
@@ -1113,10 +1162,12 @@ header {
     transition: .5s;
 
 }
+
 .section07_item:nth-child(1) .section07_top {
     background: url(../img/finejob.jpg) no-repeat center center;
     background-size: 110% 110%;
 }
+
 .section07_item:nth-child(2) .section07_top {
     background: url(../img/bigdata.jpg) no-repeat center center;
     background-size: 110% 110%;
@@ -1126,9 +1177,11 @@ header {
     background: url(../img/dodream.jpg) no-repeat center center;
     background-size: 110% 110%;
 }
+
 .section07_item:hover .section07_top {
     background-size: 125% 125%;
 }
+
 .section07_item:hover .section07_top::after {
     background: rgba(0, 0, 0, 0.15);
 }
@@ -1137,18 +1190,21 @@ header {
     background: white;
     padding: 24px 0px 24px 40px;
 }
+
 .section07_title {
     font-size: 18px;
     color: #014099;
     letter-spacing: -0.025em;
     margin-bottom: 12px;
 }
+
 .section07_subtitle {
     color: #666;
     letter-spacing: -0.05em;
     font-size: 14px;
     line-height: 20px;
 }
+
 .section07_more {
     display: block;
     color: #666;
@@ -1163,22 +1219,27 @@ header {
     -o-transition: .5s;
     transition: .5s;
 }
+
 .section07_more:hover {
     background: #666;
     color: white;
 }
 
 /*footer*/
+
 footer {
     width: 100%;
+    min-width: 1280px;
     background: #f2f2f2;
 }
 
 .family {
     width: 100%;
+    min-width: 1280px;
     background: white;
     display: none;
 }
+
 .family_container {
     width: 1160px;
     padding: 40px 0px;
@@ -1186,6 +1247,7 @@ footer {
     letter-spacing: -0.05em;
     position: relative;
 }
+
 .family_top {
     margin-bottom: 40px;
 }
@@ -1195,27 +1257,34 @@ footer {
     color: #014099;
     margin-bottom: 24px;
 }
+
 .family_list {
     color: #666;
     width: 100%;
+    min-width: 1280px;
     line-height: 28px;
 }
+
 .family_list::after {
     content: '';
     display: block;
     clear: both;
 }
+
 .family_list li {
     float: left;
     margin-right: 20px;
 }
+
 .family_item {
     display: inline-block;
     width: 130px;
 }
+
 .family_item:hover {
     text-decoration: underline;
 }
+
 .family_close {
     display: block;
     width: 60px;
@@ -1228,6 +1297,7 @@ footer {
     left: 50%;
     margin-left: -30px;
 }
+
 .family_active {
     height: 0px;
     max-height: 0px;
@@ -1241,11 +1311,13 @@ footer {
     padding-bottom: 40px;
     position: relative;
 }
+
 .footer_contanier::after {
     content: '';
     display: block;
     clear: both;
 }
+
 .family_open {
     display: block;
     width: 60px;
@@ -1254,45 +1326,53 @@ footer {
     background-color: rgba(1, 64, 153, 0.65);
     text-indent: -9999px;
     position: absolute;
-    top:-32px;
+    top: -32px;
     left: 50%;
     margin-left: -30px;
 }
+
 .ft_logo {
     width: 200px;
     float: left;
     margin-right: 80px;
 }
+
 .ft_info {
     float: left;
     color: #666;
     letter-spacing: -0.05em;
 }
+
 .ft_top {
     margin-bottom: 40px;
 }
+
 .ft_bottom_list::after {
     content: '';
     display: block;
     clear: both;
 }
+
 .ft_item {
     float: left;
     margin-right: 40px;
     line-height: 32px;
 }
+
 .ft_item:last-child {
     margin-right: 0;
 }
+
 .ft_item span {
     color: #e60012;
     font-size: 24px;
     font-weight: 700;
 }
+
 .ft_copy {
     line-height: 32px;
 }
+
 .ft_info a:hover {
     text-decoration: overline;
 }
-
