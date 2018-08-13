@@ -812,6 +812,7 @@ header {
     bottom: 0;
     left: 100px;
 }
+
 .graph_title {
     color: #222;
     font-size: 24px;
@@ -831,6 +832,7 @@ header {
     text-align: center;
     overflow: hidden;
 }
+
 
 .graph_txt {
     width: 100%;
@@ -890,7 +892,9 @@ header {
     bottom: 0;
     left: 125px;
     padding-left: 5px;
+    font-size: 12px;
 }
+
 
 
 
