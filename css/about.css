@@ -627,7 +627,6 @@ section {
 
 .info_list li {
     width: 100%;
-    min-width: 1280px;
     padding: 20px 0px 20px 40px;
     border-bottom: 1px solid #666;
     /*    font-size: 16px;*/
