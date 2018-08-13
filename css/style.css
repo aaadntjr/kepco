@@ -803,7 +803,15 @@ header {
     float: left;
     position: relative;
 }
-
+.section05_graph::after {
+    content: '\2714';
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    color: #e60012;
+    bottom: 0;
+    left: 100px;
+}
 .graph_title {
     color: #222;
     font-size: 24px;
